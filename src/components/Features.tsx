@@ -1,6 +1,6 @@
 'use client'
 import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from './ui/accordion'
-import { Calendar, ChartBarIncreasingIcon,Database,DollarSign, Shield, ShieldCheck } from 'lucide-react'
+import { Calendar, ChartBarIncreasingIcon,DollarSign,ShieldCheck } from 'lucide-react'
 import Image from 'next/image'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'motion/react'

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import {Roboto} from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
-import Footer from "@/components/Footer";
+
 
 
 
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="m-0 p-0">
       <body
-        className={`${roboto.variable} antialiased` + "m-0 p-0"}
+        className={`${roboto.variable} antialiased`}
       >
         <main className="min-h-screen">
           {children}

@@ -6,8 +6,6 @@ import Header from './Header'
 import Link from 'next/link'
 import { Button } from './ui/button'
 import Image from 'next/image'
-import { InfiniteSlider } from './ui/infinite-slider'
-import { ProgressiveBlur } from './ui/progressive-blur'
 import { GlowEffect } from './ui/glow-effect'
 import { ChevronRight } from 'lucide-react'
 

@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
+
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -111,20 +114,8 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 
-   /* 60% - PRIMARY BACKGROUNDS (Use for main sections, hero areas, page backgrounds) */
-  --constrack-bg-primary: #F7F4F4;        /* Light warm gray - Main page background, sections */
-  --constrack-bg-secondary: #ffffff;       /* Pure white - Cards, modals, content areas */
-
-  /* 30% - TEXT & SECONDARY ELEMENTS (Use for navigation, headers, body text, borders) */
-  --constrack-text-primary: #222121;       /* Dark charcoal - Main headings, navigation, body text */
-  --constrack-text-secondary: #D0B5B6;     /* Muted rose - Subtext, borders, dividers, secondary nav */
-
-  /* 10% - ACCENT & CALL-TO-ACTIONS (Use sparingly for buttons, links, highlights) */
-  --constrack-accent: #A10D0F;            /* Deep red - CTA buttons, important links, active states */
-  --constrack-accent-hover: #630607;      /* Darker red - Hover states for buttons and links */
-  --constrack-accent-foreground: #F7F4F4; /* Light text - Text color on red backgrounds */
-
 }
+
 
 @layer base {
   * {
@@ -132,31 +123,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    margin: 0;
+    padding: 0;
   }
 }
-
-
-
-/* 
-  USAGE EXAMPLES:
-
-  60% Areas:
-  - Hero sections: bg-[var(--constrack-bg-primary)]
-  - Page backgrounds: bg-[var(--constrack-bg-primary)]
-  - Card backgrounds: bg-[var(--constrack-bg-secondary)]
-  - Modal/popup backgrounds: bg-[var(--constrack-bg-secondary)]
-
-  30% Elements:
-  - Main headings: text-[var(--constrack-text-primary)]
-  - Navigation text: text-[var(--constrack-text-primary)]
-  - Body paragraphs: text-[var(--constrack-text-primary)]
-  - Secondary text: text-[var(--constrack-text-secondary)]
-  - Borders/dividers: border-[var(--constrack-text-secondary)]
-
-  10% Accents:
-  - Primary buttons: bg-[var(--constrack-accent)] text-[var(--constrack-accent-foreground)]
-  - Important links: text-[var(--constrack-accent)]
-  - Active navigation: text-[var(--constrack-accent)]
-  - Hover states: hover:bg-[var(--constrack-accent-hover)]
-  - Form focus states: focus:border-[var(--constrack-accent)]
-  */

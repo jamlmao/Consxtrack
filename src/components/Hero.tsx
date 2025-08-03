@@ -54,11 +54,11 @@ const HeroSection = () => {
                                <div className='relative'>
                                     <GlowEffect 
                                         className="rounded-full "
-                                        colors={['#D0B5B6', '#8B0B0D', '#A10D0F']}
+                                        colors={['#D0B5B6', '#8B0B0D', '#A10D0F', '#4ed2e9ff', '#23c582ff']}
                                         mode='colorShift'
                                         blur='medium'
-                                        duration={5}
-                                        scale={1}
+                                        duration={3}
+                                        scale={.9}
                                     />
 
                                     <Button
